@@ -1,0 +1,23 @@
+<div class="back">
+  <button routerLink="" class="btn btn-primary">Back</button>
+</div>
+
+<h2>Personal Details</h2>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of personalDetails">
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.age }}</td>
+      <td>{{ employee.gender }}</td>
+    </tr>
+  </tbody>
+</table>
